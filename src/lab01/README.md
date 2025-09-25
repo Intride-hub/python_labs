@@ -1,4 +1,1 @@
-![alt text](lab01.01.png)
-
-
-
+![My Image]("C:\Users\Макар\Documents\GitHub\python_labs\misc\img\lab01\lab01_01.png")
