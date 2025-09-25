@@ -1,1 +1,2 @@
-![Code1](/misc/images/lab01/lab01.01.png)
+![alt text](https://github.com/Intride-hub/python_labs/blob/[main]/lab01.01.png?raw=true)
+
