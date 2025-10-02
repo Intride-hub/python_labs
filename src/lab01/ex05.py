@@ -7,6 +7,6 @@ for w in words:
     up = fir.upper()
     init.append(up)
 initre=''.join(init)
-lenth=len(namecl)
+lenth=sum(len(word) for word in words) + (len(words)-1)
 print(f'Инициалы: {initre}')
 print(f'Длина (символы): {lenth}')
