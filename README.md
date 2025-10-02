@@ -4,9 +4,9 @@
 Задание 1
 
 
-name=input('Имя:')
-age=int(input('Возраст:'))
-print(f'Привет, {name}! Через год тебе будет {age+1}.')
+<p>name=input('Имя:')<br>
+age=int(input('Возраст:'))<br>
+print(f'Привет, {name}! Через год тебе будет {age+1}.')</p>
 
 ![Задание 1](misc/img/lab01/lab01_01.png)
 
