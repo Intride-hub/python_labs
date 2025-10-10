@@ -72,7 +72,7 @@ print(f'Длина (символы): {lenth}')</p>
 
 задание 6
 
-
+```python
 <p>n=int(input('in_1: '))<br>
 och=0<br>
 zaoch=0<br>
@@ -84,7 +84,7 @@ for i in range(n):<br>
     else:<br>
         zaoch+=1<br>
 print(f'out: {och} {zaoch}')</p>
-
+```
 
 
 ![Задание 1](misc/img/lab01/lab01_06.png)
@@ -109,4 +109,12 @@ print(f'out: {stroka(s)}')</p>
 
 
 ![Задание 7](misc/img/lab01/lab01_07.png)
+
+
+
+Лабораторная работа 2
+
+Задание 1
+
+
 
