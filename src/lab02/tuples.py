@@ -15,7 +15,7 @@ def format_record(rec: tuple[str, str, float]) -> str:
     
     fio_clean=" ".join(fio.strip().split())
 
-    parts=fio_clean.split(" ")
+    parts=fio_clean.split()
 
     if len(parts)<2 or len(parts)>3:
         raise ValueError(f"Некорректное ФИО: '{fio}'")
