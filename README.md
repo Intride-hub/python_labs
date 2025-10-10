@@ -212,7 +212,7 @@ print(col_sums([[1, 2], [3]]))
 
 ![Задание B](misc/img/lab02/lab02_matrix.png)
 ![Задание B](misc/img/lab02/lab02_matrix_2.png)
-![Задание B](misc/img/lab02/lab02_maxtrix_3.png)
+![Задание B](misc/img/lab02/lab02_matrix_3.png)
 
 
 
