@@ -155,4 +155,111 @@ print(flatten([[1], [], [2, 3]]))
 print(flatten([[1, 2], "ab"]))
 ```
 ![Задание 1](misc/img/lab02/lab02_arrays1.png)
+![Задание A](misc/img/lab02/lab02_arrays2.png)
+![Задание B](misc/img/lab02/lab02_arrays3.png)
 
+
+
+
+Задание B
+
+
+```python
+def check(mat: list[list])-> None:
+    if not mat:
+        return
+    ln=len(mat[0])
+    for i in mat:
+        if len(i)!=ln:
+            raise ValueError
+
+
+
+
+def transpose(mat: list[list[float | int]]) -> list[list]:
+    check(mat)
+    if not mat:
+        return []
+    return[list(col) for col in zip(*mat)]
+
+
+def row_sums(mat: list[list[float | int]]) -> list[float]:
+    check(mat)
+    return[sum(row) for row in mat]
+
+def col_sums(mat: list[list[float | int]]) -> list[float]:
+    check(mat)
+    if not mat:
+        return []
+    return[sum(col) for col in zip(*mat)]
+    
+print(transpose([[1, 2, 3]]))     
+print(transpose([[1], [2], [3]]))  
+print(transpose([[1, 2], [3, 4]]))   
+print(transpose([]))                
+print(transpose([[1, 2], [3]]))          
+
+print(row_sums([[1, 2, 3], [4, 5, 6]]))  
+print(row_sums([[-1, 1], [10, -10]]))   
+print(row_sums([[0, 0], [0, 0]]))    
+print(row_sums([[1,2],[3]]))    
+
+print(col_sums([[1, 2, 3], [4, 5, 6]]))  
+print(col_sums([[-1, 1], [10, -10]]))  
+print(col_sums([[0, 0], [0, 0]]))       
+print(col_sums([[1, 2], [3]]))
+```
+
+![Задание B](misc/img/lab02/lab02_matrix.png)
+![Задание B](misc/img/lab02/lab02_matrix2.png)
+![Задание B](misc/img/lab02/lab02_maxtrix3.png)
+
+
+
+Задание C
+
+```python
+def format_record(rec: tuple[str, str, float]) -> str:
+    if not isinstance(rec, tuple) or len(rec) != 3:
+        raise ValueError("Ожидается кортеж из трёх элементов (fio, group, gpa)")
+
+    fio, group, gpa = rec
+
+    if not isinstance(fio, str):
+        raise TypeError("ФИО должно быть строкой")
+    
+    if not isinstance(group, str):
+        raise TypeError("Группа должна быть строкой")
+    
+    if not isinstance(gpa, (int, float)):
+        raise TypeError("GPA должен быть числом")
+    
+    fio_clean=" ".join(fio.strip().split())
+
+    parts=fio_clean.split(" ")
+
+    if len(parts)<2 or len(parts)>3:
+        raise ValueError(f"Некорректное ФИО: '{fio}'")
+    
+    surname = parts[0].capitalize()
+
+    initials= "".join(p[0].upper() + '.' for p in parts[1:])
+
+    group_clean=group.strip()
+
+    if not group_clean:
+        raise ValueError("Группа не может быть пустой")
+    
+    gpa_str=f"{float(gpa):.2f}"
+
+    return f"{surname} {initials}, гр. {group_clean}, GPA {gpa_str}"
+
+print(format_record(("Иванов Иван Иванович", "BIVT-25", 4.6)))
+
+print(format_record(("Петров Пётр", "IKBO-12", 5.0)))
+
+print(format_record(("Петров Пётр Петрович", "IKBO-12", 5.0)))
+
+print(format_record(("  сидорова  анна   сергеевна ", "ABB-01", 3.999)))
+```
+![Задание C](misc/img/lab02/lab02_tuples.png)
