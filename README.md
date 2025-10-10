@@ -153,6 +153,6 @@ print(flatten([[1, 2], [3, 4]]))
 print(flatten([[1, 2], (3, 4, 5)]))
 print(flatten([[1], [], [2, 3]]))
 print(flatten([[1, 2], "ab"]))
-
+```
 ![Задание 1](misc/img/lab02/lab02_arrays1.png)
 
