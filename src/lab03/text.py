@@ -4,7 +4,7 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
         res=res.replace(char,' ')
     
     if yo2e:
-        res=res.replace('ё','е').replace('Ё','е')
+        res=res.replace('ё','е').replace('Ё','Е')
     
     if casefold:
         res=res.casefold()
