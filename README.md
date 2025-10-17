@@ -302,6 +302,12 @@ print(repr(normalize("  двойные   пробелы  ")))
 ```
 
 tokenize
+
+
+![Задание C](misc/img/lab03/lab03_1_2.png)
+
+
+
 ```python
 import re
 
@@ -320,12 +326,12 @@ print(tokenize("2025 год"))
 
 print(tokenize("emoji 😀 не слово"))
 ```
-![Задание C](misc/img/lab03/lab03_2.png)
+
 
 
 
 count_freq 
-![Задание C](misc/img/lab02/lab02_3.png)
+![Задание C](misc/img/lab03/lab03_1_3.png)
 
 ```python
 def count_freq(tokens: list[str]) -> dict[str, int]:
@@ -358,7 +364,7 @@ print(count_freq(["bb","aa","bb","aa","cc"]))
 top_n
 
 
-![Задание C](misc/img/lab03/lab03_4.png)
+![Задание C](misc/img/lab03/lab03_1_4.png)
 
 
 ```python
