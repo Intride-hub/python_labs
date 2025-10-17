@@ -300,3 +300,113 @@ print(repr(normalize("Hello\r\nWorld")))
 
 print(repr(normalize("  двойные   пробелы  ")))
 ```
+
+tokenize
+```python
+import re
+
+def tokenize(text: str) -> list[str]:
+    token = re.findall(r"[\w]+(?:-[\w]+)*", text)
+    return token
+
+print(tokenize("привет мир"))
+
+ 
+print(tokenize("hello,world!!!"))
+
+print(tokenize("по-настоящему круто"))
+
+print(tokenize("2025 год"))
+
+print(tokenize("emoji 😀 не слово"))
+```
+![Задание C](misc/img/lab03/lab03_2.png)
+
+
+
+count_freq 
+![Задание C](misc/img/lab02/lab02_3.png)
+
+```python
+def count_freq(tokens: list[str]) -> dict[str, int]:
+    freq={}
+    for token in tokens:
+        if token in freq:
+            freq[token]+=1
+        else:
+            freq[token]=1
+    return freq
+
+print(count_freq(["a","b","a","c","b","a"]))
+
+print(count_freq(["bb","aa","bb","aa","cc"]))
+def count_freq(tokens: list[str]) -> dict[str, int]:
+    freq={}
+    for token in tokens:
+        if token in freq:
+            freq[token]+=1
+        else:
+            freq[token]=1
+    return freq
+
+print(count_freq(["a","b","a","c","b","a"]))
+
+print(count_freq(["bb","aa","bb","aa","cc"]))
+
+```
+
+top_n
+
+
+![Задание C](misc/img/lab03/lab03_4.png)
+
+
+```python
+def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
+    sort_it=sorted(freq.items(), key=lambda x: (-x[1],x[0]))
+    return sort_it[:n]
+
+
+print(top_n(count_freq(["a","b","a","c","b","a"]),2))
+print(top_n(count_freq(["bb","aa","bb","aa","cc"]),2))
+
+```
+
+
+Задание B
+
+
+![Задание C](misc/img/lab03/lab03_text_stats.png)
+
+```python
+import sys
+from  text import *
+def main():
+    text =sys.stdin.read() 
+
+    if not text:
+        print("Ввод пуст")
+        return
+    
+    
+    normalized_text = normalize(text)
+    tokens = tokenize(normalized_text)
+    freq_dict = count_freq(tokens)
+    
+    total_words = len(tokens)
+    unique_words = len(freq_dict)
+    
+   
+    print(f"Всего слов: {total_words}")
+    print(f"Уникальных слов: {unique_words}")
+    
+ 
+    print("Топ-5:")
+    top_words = top_n(freq_dict, 5)
+    for word, count in top_words:
+        print(f"{word}:{count}")
+ 
+if __name__ == "__main__":
+    main()
+```
+
