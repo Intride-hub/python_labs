@@ -346,18 +346,7 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
 print(count_freq(["a","b","a","c","b","a"]))
 
 print(count_freq(["bb","aa","bb","aa","cc"]))
-def count_freq(tokens: list[str]) -> dict[str, int]:
-    freq={}
-    for token in tokens:
-        if token in freq:
-            freq[token]+=1
-        else:
-            freq[token]=1
-    return freq
 
-print(count_freq(["a","b","a","c","b","a"]))
-
-print(count_freq(["bb","aa","bb","aa","cc"]))
 
 ```
 
