@@ -263,3 +263,40 @@ print(format_record(("Петров Пётр Петрович", "IKBO-12", 5.0)))
 print(format_record(("  сидорова  анна   сергеевна ", "ABB-01", 3.999)))
 ```
 ![Задание C](misc/img/lab02/lab02_tuples.png)
+
+
+
+
+Лабараторная работа 3
+
+
+Задание A
+normalize
+![Задание B](misc/img/lab03/lab03_1.png)
+```python
+def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+    res=text
+    for char in ['\n','\r','\t']:
+        res=res.replace(char,' ')
+    
+    if yo2e:
+        res=res.replace('ё','е').replace('Ё','Е')
+    
+    if casefold:
+        res=res.casefold()
+    res=' '.join(res.split())
+
+
+    return res
+
+print(repr(normalize("ПрИвЕт\nМИр\t")))
+
+
+print(repr(normalize("ёжик, Ёлка")))
+
+
+print(repr(normalize("Hello\r\nWorld")))
+
+
+print(repr(normalize("  двойные   пробелы  ")))
+```
