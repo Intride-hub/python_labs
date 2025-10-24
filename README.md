@@ -407,11 +407,15 @@ print("Все тесты успешно пройдены")
 Задание B
 
 
-![Задание C](misc/img/lab03/lab03_text_stats.png)
+![Задание C](misc/img/lab03/lab03_text_1.png)
 
 ```python
 import sys
 from  text import *
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 def main():
     text =sys.stdin.read() 
 
