@@ -1,12 +1,17 @@
 import sys
-from  text import *
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
+from lib.text import *
+
 def main():
     text =sys.stdin.read() 
 
     if not text:
         print("Ввод пуст")
         return
-    
+
     
     normalized_text = normalize(text)
     tokens = tokenize(normalized_text)
@@ -23,7 +28,7 @@ def main():
     print("Топ-5:")
     top_words = top_n(freq_dict, 5)
     for word, count in top_words:
-        print(f"{word}:{count}")
+        print(f"{word}:{count}")    
  
 if __name__ == "__main__":
     main()
