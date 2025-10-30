@@ -451,7 +451,7 @@ if __name__ == "__main__":
 
 <h1>Лабораторная Работа 4</h1>
 
-Задание A
+<h2>Задание A</h2>
 
 ```python
 from pathlib import Path
@@ -480,13 +480,13 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
 ```
 
 
-Mini test
+<h2>Mini test</h2>
 
 
 ![Задание C](misc/img/lab04/mini_test.png)
 
 
-Задание B
+<h2>Задание B</h2>
 
 
 ```python
