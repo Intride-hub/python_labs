@@ -1,0 +1,5 @@
+Alice is a software engineer. She works in SPB.
+Bob is a designer and lives in Moscow.
+Alice and Bob often collaborate on projects.
+The team enjoys coding, testing, and deploying software.
+Python is their favorite programming language.
