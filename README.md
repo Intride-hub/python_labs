@@ -659,7 +659,10 @@ if __name__ == "__main__":
     main()
 ```
 
+<h3>Подкоманда cat</h3>
 ![Задание C](misc/img/lab06/clicat.png)
+
+<h3>Подкоманда stats</h3>
 ![Задание C](misc/img/lab06/clistats.png)
 
 <h2>Задание 2</h2>
@@ -736,6 +739,11 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+<h3>Подкоманда csv2json</h3>
 ![Задание C](misc/img/lab06/conv1.png)
+
+<h3>Подкоманда json2csv</h3>
 ![Задание C](misc/img/lab06/conv2.png)
+
+<h3>Подкоманда csv2xlsx</h3>
 ![Задание C](misc/img/lab06/conv3.png)
