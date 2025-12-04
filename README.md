@@ -584,8 +584,9 @@ if __name__ == "__main__":
 <h1>Лабораторная Работа 6</h1>
 
 <h2>Задание 1</h2>
-```python
 
+
+```python
 from src.lib.text import *
 
 import argparse
@@ -656,7 +657,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 ![Задание C](misc/img/lab06/clicat.png)
@@ -669,7 +669,6 @@ import argparse
 from src.lib.json_csv import json_to_csv, csv_to_json
 from src.lib.csv_xlsx import csv_to_xlsx
 from pathlib import Path
-
 
 def ensure_file_exists(path: Path, parser):
     if not path.exists():
@@ -685,7 +684,6 @@ def command_json_to_csv(inp: Path, out: Path, parser):
     except Exception as e:
         parser.error(f"Ошибка конвертации JSON → CSV: {e}")
 
-
 def command_csv_to_json(inp: Path, out: Path, parser):
     ensure_file_exists(inp, parser)
     try:
@@ -694,7 +692,6 @@ def command_csv_to_json(inp: Path, out: Path, parser):
     except Exception as e:
         parser.error(f"Ошибка конвертации CSV → JSON: {e}")
 
-
 def command_csv_to_xlsx(inp: Path, out: Path, parser):
     ensure_file_exists(inp, parser)
     try:
@@ -702,9 +699,6 @@ def command_csv_to_xlsx(inp: Path, out: Path, parser):
         print(f"XLSX сохранён в: {out}")
     except Exception as e:
         parser.error(f"Ошибка конвертации CSV → XLSX: {e}")
-
-
-
 
 def main():
     parser = argparse.ArgumentParser(description="Конвертеры данных")
@@ -741,7 +735,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 ![Задание C](misc/img/lab06/conv1.png)
 ![Задание C](misc/img/lab06/conv2.png)
