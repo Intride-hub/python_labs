@@ -44,16 +44,16 @@ def main():
     sub = parser.add_subparsers(dest="cmd")
 
     p1 = sub.add_parser("json2csv")
-    p1.add_argument("--in", dest="input", required=True)
-    p1.add_argument("--out", dest="output", required=True)
+    p1.add_argument("--in", dest="input", required=True, help='входящий файл')
+    p1.add_argument("--out", dest="output", required=True, help='выходящий файл')
 
     p2 = sub.add_parser("csv2json")
-    p2.add_argument("--in", dest="input", required=True)
-    p2.add_argument("--out", dest="output", required=True)
+    p2.add_argument("--in", dest="input", required=True, help='входящий файл')
+    p2.add_argument("--out", dest="output", required=True, help='выходящий файл')
 
     p3 = sub.add_parser("csv2xlsx")
-    p3.add_argument("--in", dest="input", required=True)
-    p3.add_argument("--out", dest="output", required=True)
+    p3.add_argument("--in", dest="input", required=True, help='входящий файл')
+    p3.add_argument("--out", dest="output", required=True, help='выходящий файл')
 
     args = parser.parse_args()
 
