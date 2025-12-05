@@ -752,3 +752,12 @@ if __name__ == "__main__":
 <h3>Подкоманда csv2xlsx</h3>
 
 ![Задание C](misc/img/lab06/conv3.png)
+
+
+<h3>Help cli_text</h3>
+
+![Задание C](misc/img/lab06/help.png)
+
+<h3>Help cli_convert</h3>
+
+![Задание C](misc/img/lab06/help2.png)
