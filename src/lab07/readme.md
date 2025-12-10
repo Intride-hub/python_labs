@@ -182,8 +182,9 @@ def test_csv_to_json_empty_file(tmp_path: Path):
         csv_to_json(str(src), str(src.with_suffix(".json")))
 ```
 
+
 ![Задание 7](misc/img/lab07/tests.png)
 
 
-![Задание 7](misc/img/lab07/black.png)
+
 
