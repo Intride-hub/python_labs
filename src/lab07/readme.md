@@ -183,7 +183,8 @@ def test_csv_to_json_empty_file(tmp_path: Path):
 ```
 
 
-![Задание 7](misc/img/lab07/tests.png)
+![Задание 7](tests.png)
+
 
 
 
