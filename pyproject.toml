@@ -1,0 +1,8 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.py$'
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "--cov=src --cov-report=term-missing"

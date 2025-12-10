@@ -1,4 +1,6 @@
-s=input('in: ')
+s = input("in: ")
+
+
 def stroka(s):
     start = next(i for i, c in enumerate(s) if c.isupper())
     step = (next(i for i, c in enumerate(s) if c.isdigit()) + 1) - start
@@ -10,4 +12,4 @@ def stroka(s):
     return result
 
 
-print(f'out: {stroka(s)}')
+print(f"out: {stroka(s)}")

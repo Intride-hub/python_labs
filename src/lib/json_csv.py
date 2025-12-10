@@ -18,7 +18,9 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
             raise ValueError("JSON-файл поврежден или имеет неверный формат")
 
     if not isinstance(data, list) or len(data) == 0:
-        raise ValueError("Пустой JSON или неподдерживаемая структура — ожидается список словарей")
+        raise ValueError(
+            "Пустой JSON или неподдерживаемая структура — ожидается список словарей"
+        )
 
     if not all(isinstance(item, dict) for item in data):
         raise ValueError("JSON должен содержать список словарей")

@@ -10,6 +10,7 @@ def ensure_file_exists(path: Path, parser):
     if not path.is_file():
         parser.error(f"Ошибка: путь не является файлом: {path}")
 
+
 def command_json_to_csv(inp: Path, out: Path, parser):
     ensure_file_exists(inp, parser)
     try:
@@ -37,23 +38,21 @@ def command_csv_to_xlsx(inp: Path, out: Path, parser):
         parser.error(f"Ошибка конвертации CSV → XLSX: {e}")
 
 
-
-
 def main():
     parser = argparse.ArgumentParser(description="Конвертеры данных")
     sub = parser.add_subparsers(dest="cmd")
 
     p1 = sub.add_parser("json2csv")
-    p1.add_argument("--in", dest="input", required=True, help='входящий файл')
-    p1.add_argument("--out", dest="output", required=True, help='выходящий файл')
+    p1.add_argument("--in", dest="input", required=True, help="входящий файл")
+    p1.add_argument("--out", dest="output", required=True, help="выходящий файл")
 
     p2 = sub.add_parser("csv2json")
-    p2.add_argument("--in", dest="input", required=True, help='входящий файл')
-    p2.add_argument("--out", dest="output", required=True, help='выходящий файл')
+    p2.add_argument("--in", dest="input", required=True, help="входящий файл")
+    p2.add_argument("--out", dest="output", required=True, help="выходящий файл")
 
     p3 = sub.add_parser("csv2xlsx")
-    p3.add_argument("--in", dest="input", required=True, help='входящий файл')
-    p3.add_argument("--out", dest="output", required=True, help='выходящий файл')
+    p3.add_argument("--in", dest="input", required=True, help="входящий файл")
+    p3.add_argument("--out", dest="output", required=True, help="выходящий файл")
 
     args = parser.parse_args()
 
@@ -71,6 +70,7 @@ def main():
 
     else:
         parser.error("Ошибка: команда не указана. Используйте --help.")
+
 
 if __name__ == "__main__":
     main()
