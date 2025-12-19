@@ -3,22 +3,22 @@
 
 <h2>Задание 1</h2>
 
-
-<p>name=input('Имя:')<br>
-age=int(input('Возраст:'))<br>
-print(f'Привет, {name}! Через год тебе будет {age+1}.')</p>
-
+```python
+name=input('Имя:')
+age=int(input('Возраст:'))
+print(f'Привет, {name}! Через год тебе будет {age+1}.')
+```
 ![Задание 1](misc/img/lab01/lab01_01.png)
 
 
 <h2>Задание 2</h2>
-
-<p>a=float(input('a: ').replace(',','.'))<br>
-b=float(input('b: ').replace(',','.'))<br>
+```python
+a=float(input('a: ').replace(',','.'))
+b=float(input('b: ').replace(',','.'))
 sum=a+b<br>
-avg=(a+b)/2<br>
-print(f'sum={sum:.2f}; avg={avg:.2f}')</p>
-
+avg=(a+b)/2
+print(f'sum={sum:.2f}; avg={avg:.2f}')
+```
 
 
 ![Задание 1](misc/img/lab01/lab01_02.png)
@@ -26,17 +26,17 @@ print(f'sum={sum:.2f}; avg={avg:.2f}')</p>
 
 <h2>Задание 3</h2>
 
-
-<p>price = float(input("price: "))<br>
-discount = float(input("discount: "))<br>
-vat = float(input("vat: "))<br>
-base= price * (1-discount/100)<br>
-vat_amount= base * (vat/100)<br>
-total = base + vat_amount<br>
-print(f'База после скидки: {base:.2f} ₽')<br>
-print(f'НДС: {vat_amount:.2f} ₽')<br>
-print(f'Итого к оплате: {total:.2f} ₽')</p>
-
+```python
+price = float(input("price: "))
+discount = float(input("discount: "))
+vat = float(input("vat: "))
+base= price * (1-discount/100)
+vat_amount= base * (vat/100)
+total = base + vat_amount
+print(f'База после скидки: {base:.2f} ₽')
+print(f'НДС: {vat_amount:.2f} ₽')
+print(f'Итого к оплате: {total:.2f} ₽')
+```
 ![Задание 1](misc/img/lab01/lab01_03.png)
 
 
@@ -765,4 +765,4 @@ if __name__ == "__main__":
 
 
 <h2>Лабораторная работа 9</h2>
-9я лаба [LAB09](/src/lab09/README.md)
+9я лаба [LAB09](src/lab09/README.md)
