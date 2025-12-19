@@ -130,22 +130,36 @@ fio,birthdate,group,gpa
 
 
 group.add(Student("Чееловеек ПАУК", "2003-01-15", "БИВТ-21-1", 4.7))
-![Задание 1](misc/img/lab09/create.png)
+![Задание 1](create.png)
 
 
 
-# print(group.list())
-![Задание 1](misc/img/lab09/read.png)
+print(group.list())
+
+
+![Задание 1](read.png)
+
+
 
 print(group.find("иванов"))
-![Задание 1](misc/img/lab09/find.png)
+
+![Задание 1](find.png)
+
 
 group.update("Иванов Иван", gpa=2.6)
-![Задание 1](misc/img/lab09/update.png)
+
+![Задание 1](update.png)
+
+
 
 group.remove("Чееловеек ПАУК")
-![Задание 1](misc/img/lab09/delete.png)
+
+![Задание 1](remove.png)
 
 
 print(group.stats())
-![Задание 1](misc/img/lab09/stats.png)
+
+![Задание 1](stats.png)
+
+
+
