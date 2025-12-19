@@ -761,3 +761,8 @@ if __name__ == "__main__":
 <h3>Help cli_convert</h3>
 
 ![Задание C](misc/img/lab06/help2.png)
+
+
+
+<h2>Лабораторная работа 9</h2>
+9я лаба [LAB09](/src/lab09/README.md)
