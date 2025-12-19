@@ -65,7 +65,7 @@ class Queue:
         return f"Queue({list(self._data)})"
 
 
-# ================== DEMO ==================
+
 if __name__ == "__main__":
     print("=== STACK DEMO ===")
     stack = Stack()
@@ -205,7 +205,7 @@ class SinglyLinkedList:
         return " -> ".join(parts)
 
 
-# ================== DEMO ==================
+
 if __name__ == "__main__":
     print("=== SINGLY LINKED LIST DEMO ===")
 
@@ -239,3 +239,4 @@ if __name__ == "__main__":
 ```
 
 ![Задание 1](link.png)
+
