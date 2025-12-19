@@ -766,4 +766,4 @@ if __name__ == "__main__":
 
 <h2>Лабораторная работа 9</h2>
 
-9я лаба [LAB09](/src/lab09/README.md)
+9я лаба [LAB09](/src/lab09/readme.md)
