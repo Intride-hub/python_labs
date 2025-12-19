@@ -146,7 +146,7 @@ print(group.find("иванов"))
 ![Задание 1](find.png)
 
 
-group.update("Иванов Иван", gpa=2.6
+group.update("Иванов Иван", gpa=2.6)
 
 ![Задание 1](update.png)
 
@@ -154,11 +154,12 @@ group.update("Иванов Иван", gpa=2.6
 
 group.remove("Чееловеек ПАУК")
 
-![Задание 1](delete.png)
+![Задание 1](remove.png)
 
 
 print(group.stats())
 
 ![Задание 1](stats.png)
+
 
 
