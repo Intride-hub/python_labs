@@ -1,12 +1,33 @@
-from src.lab08.serialize import students_from_json, students_to_json
+from src.lab09 import Group
+from src.lab08.models import Student
 
-input_path = "data/lab08/students_input.json"
-output_path = "data/lab08/students_output.json"
+group = Group("data/lab09/students.csv")
 
-students = students_from_json(input_path)
+# CREATE
+group.add(Student("Чееловеек ПАУК", "2003-01-15", "БИВТ-21-1", 4.7))
 
-for s in students:
-    print(s, "| возраст:", s.age())
 
-students_to_json(students, output_path)
-print("\nСериализация завершена. Файл сохранён в", output_path)
+
+
+
+
+
+
+
+
+
+# # READ
+# print(group.list())
+
+# # FIND
+# print(group.find("иванов"))
+
+# # UPDATE
+# group.update("Иванов Иван", gpa=4.6)
+
+# # DELETE
+# group.remove("Петров Пётр")
+
+# # # STATS ★
+# # print(group.stats())
+
